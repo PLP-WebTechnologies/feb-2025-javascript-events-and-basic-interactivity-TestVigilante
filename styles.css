@@ -1,0 +1,298 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0e3; /* Light beige background */
+    color: #5e463b; /* Earthy brown text */
+}
+
+header {
+    background-color: #e6d7c4; /* Slightly darker beige */
+    color: #5e463b;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #5e463b;
+    margin-left: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav li a:hover {
+    color: #a08577; /* Lighter brown on hover */
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    background-color: #fff;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #a08577;
+    border-bottom: 2px solid #a08577;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1200x400/fdd835/fff?Text=Delicious+Pastries'); /* Replace with your image */
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5em 0;
+    border-radius: 8px;
+    margin-bottom: 2em;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    background-color: #fdd835; /* Yellow accent */
+    color: #5e463b;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fbc02d;
+}
+
+/* Menu Section */
+.menu-tabs {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.menu-tabs button {
+    padding: 0.8em 1.5em;
+    margin: 0 0.5em;
+    border: 1px solid #a08577;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #5e463b;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-tabs button.active {
+    background-color: #a08577;
+    color: white;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-item h3 {
+    color: #5e463b;
+    margin-bottom: 0.3em;
+}
+
+.menu-item .description {
+    color: #777;
+    margin-bottom: 0.5em;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    color: #fdd835;
+    margin-bottom: 0.8em;
+}
+
+.order-button {
+    background-color: #a08577;
+    color: white;
+    border: none;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #8c7365;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+}
+
+/* Gallery Section */
+.gallery-section .image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gallery-thumbnail {
+    width: 80px;
+    height: 60px;
+    margin: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.gallery-thumbnail.active {
+    border-color: #fdd835;
+}
+
+.gallery-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#galleryMainImage {
+    max-width: 90%;
+    max-height: 400px;
+    margin: 0 10px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.gallery-controls button {
+    padding: 0.6em 1em;
+    background-color: #a08577;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-controls button:hover {
+    background-color: #8c7365;
+}
+
+/* Contact Section */
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #5e463b;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 0.3em;
+    display: block;
+}
+
+.contact-section button[type="submit"] {
+    background-color: #fdd835;
+    color: #5e463b;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button[type="submit"]:hover {
+    background-color: #fbc02d;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #e6d7c4;
+    color: #5e463b;
+    font-size: 0.9em;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

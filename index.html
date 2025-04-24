@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Surrender Pastries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Sweet Surrender</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Indulge in Sweet Perfection</h1>
+                <p>Handcrafted pastries made with love and the finest local ingredients.</p>
+                <button class="cta-button">Angalia Menyu Yetu</button>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Menyu Yetu Tamu</h2>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="cakes">Keki</button>
+                <button class="tab-button" data-tab="pastries">Pastries</button>
+                <button class="tab-button" data-tab="cookies">Kuki</button>
+            </div>
+            <div id="cakes" class="tab-content active">
+                <div class="menu-item">
+                    <h3>Keki ya Chocolate Fudge</h3>
+                    <p class="description">Keki tajiri ya chocolate yenye frosting ya fudge.</p>
+                    <span class="price">KES 2,500</span>
+                    <button class="order-button">Agiza Sasa</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Cheesecake ya Vanilla Bean</h3>
+                    <p class="description">Cheesecake laini ya vanilla yenye msingi wa biskuti.</p>
+                    <span class="price">KES 3,000</span>
+                    <button class="order-button">Agiza Sasa</button>
+                </div>
+                </div>
+            <div id="pastries" class="tab-content">
+                <div class="menu-item">
+                    <h3>Croissant</h3>
+                    <p class="description">Pastri ya Kifaransa laini na yenye siagi.</p>
+                    <span class="price">KES 350</span>
+                    <button class="order-button">Agiza Sasa</button>
+                </div>
+                </div>
+            <div id="cookies" class="tab-content">
+                <div class="menu-item">
+                    <h3>Kuki ya Chocolate Chip</h3>
+                    <p class="description">Kuki класична yenye chocolate chips nyingi.</p>
+                    <span class="price">KES 200</span>
+                    <button class="order-button">Agiza Sasa</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Picha Tamu Zetu</h2>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/300x200/ffcdd2/333?Text=Pastry+1" alt="Pastry 1" data-index="0" class="gallery-thumbnail active">
+                <img src="https://via.placeholder.com/300x200/f8bbd0/333?Text=Pastry+2" alt="Pastry 2" data-index="1" class="gallery-thumbnail">
+                <img src="https://via.placeholder.com/300x200/e1bee7/333?Text=Pastry+3" alt="Pastry 3" data-index="2" class="gallery-thumbnail">
+                <div class="gallery-controls">
+                    <button id="prevGallery">&lt; Iliyopita</button>
+                    <img src="https://via.placeholder.com/600x400/ffcdd2/333?Text=Pastry+1" alt="Picha Kuu ya Gallery" id="galleryMainImage">
+                    <button id="nextGallery">Inayofuata &gt;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Wasiliana Nasi Kwa Maagizo Tamu</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Jina:</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Barua Pepe:</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Ujumbe:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit">Tuma Ujumbe</button>
+                <p id="formSubmitMessage" class="hidden success-message">Asante kwa ujumbe wako!</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sweet Surrender Pastries</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
